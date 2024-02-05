@@ -2,93 +2,404 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>
-            Home
-        </title>
-        <link rel="stylesheet" type="text/css" href="agenziacss.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Single viewport meta tag is sufficient -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrea Dimauro</title> <!-- Ensure your title is appropriately spaced and capitalized -->
+        <link rel="shortcut icon" href="logo.jpeg">
+
+        <!-- Consolidate your font links -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300|Raleway:100,400,700|Oswald:200,400,700" rel="stylesheet">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+
     </head>
-    <body>
-        <header>
-            <section>
-            <nav class="titolo">
-                <ul class="ra">
-                    <li> ☑ Protezione degli acquirenti</li>
-                    <li>☑ Finanziamenti</li>
-                    <li>☑ Staff di alta esperienza </li>
-                </ul>
-                <ul class="n">
-                    <li><img class="logo" src="logo.jpg"></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="case" href="case.html">Case e Appartamenti</a></li>
-                    <li><a class="case" href="attrazioni.html">Cosa vedere?</a></li>
-                </ul>
-            </nav>
-        </section>
-        </header>
-        <main >
-            <section class="tr">
-                <section class="base">
-                    <div class="tit">Esplora Mantova con DuploCasa
-                    </div>
-                    <span class="button"><a href="chisiamo.html">Chi siamo</a></span>
-                    <span class="button"><a href="case">Case e appartamenti</a></span>
-                </section>
-                
-            </section>
-            <section class="testo">
-                <h1>Leader nel territorio</h1>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+          <div class="logo-container">
+              <img class="logo" src="image/logo.jpeg" alt="Logo">
+          </div>
+          
+          <!-- Menu Icon -->
+          <div class="menu-logo-container" id="menuLogoContainer">
+              <img class="menu-logo" src="image/icons8-menu-64.png" alt="Menu" id="menuLogo">
+          </div>
+  
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="navbarMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#pubblicazioni">Pubblicazioni</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="page-content" id="pageContent">
+      <!-- The rest of your page content goes here -->
+  </div>
+  <script nonce="af0eUHqje03YRAUw" type="text/javascript" src="//self.adblockultimate.net/manager.js?tm=1706912503&amp;lg=true" guid="{B2585409-9DDA-4870-AAB9-A529D91ACC23}" inwhitelist="false" status="true" autohide="true"></script><script>
+    window.addEventListener('scroll', function() {
+    var navigationBar = document.querySelector('.navigation-bar');
+    if (window.scrollY > 50) { // Adjust the 50px offset as needed
+        navigationBar.classList.add('scrolled');
+    } else {
+        navigationBar.classList.remove('scrolled');
+    }
+    });
+  </script>
+  <script>
+    document.getElementById('menuLogo').addEventListener('click', function() {
+        document.getElementById('navbarMenu').classList.toggle('active');
+        document.getElementById('pageContent').classList.toggle('blur');
+    });
+</script>
+
+
+<!--main-->
+
+<main>
+
+  <section id="chisono" class="home">
+    <div class="home-content">
+        <div class="home-text">
+          <h1 >Andrea Dimauro</h1>
+            <p class="homeinfo">
+              Dopo la Laurea Magistrale in Scienze Motorie, si è specializzato in ambito di preparazione fisica per il tennis,<br>
+              sport che pratica da anni. Nel corso del tempo ha maturato una esperienza pluriennale internazionale <br>
+              sulla preparazione fisica specifica per il tennis.
+              È attualmente Docente di Scienze Motorie in un istituto comprensivo e referente/formatore<br>
+              presso quattro circoli Tennis in Lombardia e Veneto.<br><br>
+              Autore insieme al Prof. Salvatore Buzzelli di uno dei pochi libri sulla preparazione fisica del giovane tennista<br>
+              e di articoli tecnici e trasmissioni per la radio, presenta inoltre il podcast FitSpeak sulla salute psicofisica.
+            </p>
+        </div>
+
+      <div class="home-image">
+          <img class="dinosauro" src="image/im_braccia.jpeg" alt="Andrea DiMauro" />
+      </div> 
+    </div>
+  </section>
+
+  <hr class="section-dividero">
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1></h1>
                 <p>
-                    DuploCasa, agenzia immobiliare a Mantova, ben radicata nel territorio, leader nel settore,<br>
-                    vi da il benvenuto sul proprio sito internet. Qui potrete trovare numerose proposte immobiliari.<br>
-                    Saremo in grado di aiutarvi con la massima serietà, professionalità e competenza a concretizzare <br>
-                    Vantiamo numerose proposte a Mantova:<br>
-                    (centro storico, valletta Paiolo, valletta Valsecchi, Te brunetti, Borgo Pompilio, Borgo Chiesanuova, Dosso del Corso,<br>
-                    Colle Aperto e Cittadella) e nei comuni limitrofi: Porto Mantovano , San Giorgio di Mantova, Curtatone e Borgo Virgilio.<br>
-                    L’agenzia immobiliare a Mantova, Pavarotti Casa è a disposizione dei loro clienti per qualsiasi informazione<br>
-                    e chiarimento in merito ad ogni nostro immobile.
+                    Il metodo per raggiungere finalmente il tuo massimo potenziale tennistico?
+                    Sei nel posto giusto!
                 </p>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Chi siamo</h4>
-                        <ul>
-                            <li><a href="chisiamo.html">About Us</a></li>
-                            <li><a href="https://form.agid.gov.it/view/45b1c2dd-0cd7-4a23-8a33-c86b6446a8fd/" target="_blank">Obiettivo di accessibilità</a></li>
-                            <li><a href="https://form.agid.gov.it/view/45b1c2dd-0cd7-4a23-8a33-c86b6446a8fd/" target="_blank">Informativa privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Aiuto</h4>
-                        <ul>
-                            <li><a href="https://www.privacycert.cloud/" target="_blank">Privacy</a></li>
-                            <li><a href="https://www.pagopa.gov.it/" target="_blank">Pagamenti</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Contatti</h4>
-                        <ul>
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            <li><a href="#">Via Torquato Tasso 5, Mantova</a></li>
-                            <i class="fa-sharp fa-solid fa-envelope"></i>
-                            <li><a href="mntd01000x@istruzione.it">mntd01000x@istruzione.it</a></li>
-                            <i class="fa-solid fa-square-phone"></i>
-                            <li><a href="0376-321569">0376-321569</a></li>
-                            <i class="fa-regular fa-id-card"></i>
-                            <li><a href="#">80016440200</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>seguici su</h4>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/ites.pitentino/" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
-                            <a href="https://www.instagram.com/ites_pitentinomantova_official/" target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
-                        </div>
-                    </div>
-                </div>
+                <h3>PREPARAZIONE FISICA TENNIS</h3>
+                <p>
+                    Sei un maestro o un circolo che vorrebbe creare stage, avere una consulenza per un report dati tramite TEST FISICI computerizzati?
+                </p>
             </div>
-    </footer>
-    </body>
+            
+            <div class="home-image">
+                <img class="dino" src="image/ad_home.jpeg" alt="Andrea DiMauro" />
+            </div>
+        </div>
+        
+   
+        <!-- chisono-->  
+      </section>
+      
+      
+    <!--salto-->
+
+    
+    <section class="salto">
+          <div class="mango">
+            <div class="jumptext">
+              <h1 class="testfisici">Test Fisici</h1>
+              <p class="testo">
+                  Itest fisici  ci permettono di trarre conclusioni<br>
+                  scientifiche perché ci danno un termine di comparazione sulla realtà a<br>
+                  livello locale, nazionale e internazionale.<br>
+                  Questi dati, inoltre, saranno utili<br>
+                  su periodi medio-lunghi per scoprire<br>
+                  status, tendenze e progressi degli atleti.<br>
+              </p>
+              <div class="jumphoto">
+                  <img src="image/im_salto.jpeg" alt="Immagine salto">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Additional sections would go here -->
+
+     <!--servizi--> 
+
+     <section class="servizi" id="servizi">
+        <h1 class="service-title">I NOSTRI SERVIZI</h1>
+        <div class="services-container">
+            <article class="service-item">
+                <h2 class="service-heading">PREPARAZIONE FISICA</h2>
+                <img class="service-icon" src="image/iconatennis.jpg" alt="Tennis Preparation Icon">
+                <p class="service-description">Preparazione Fisica specifica per il tennis e il padel.</p>
+            </article>
+            <article class="service-item">
+                <h2 class="service-heading">CONSULENZA</h2>
+                <img class="service-icon" src="image/iconaconsulenza.jpg" alt="Consulting Icon">
+                <p class="service-description">Consulenza tramite MISURAZIONE E VALUTAZIONE delle qualità fisiche del tennista attraverso una specifica batteria di test.</p>
+            </article>
+            <article class="service-item">
+                <h2 class="service-heading">PROGRAMMAZIONE</h2>
+                <img class="service-icon" src="image/iconaprogrammazione.png" alt="Programming Icon">
+                <p class="service-description">Programmi personalizzati online tramite amnesi iniziale.</p>
+            </article>
+        </div>
+    </section>
+
+     <!-- pubblicazioni -->
+
+    <section id="pubblicazioni" class="pubblicazioni">
+        <h1 class="px">LE MIE PUBBLICAZIONI</h1>
+        <hr class="section-divider">
+      
+        <div class="pu">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide custom-slide">
+                      <h1 class="mango">Manuale del giovane tennista</h1>
+                      <div class="slide-content">
+                        <div class="text-content">
+                          <p class="mant">
+                            Un’opera di grande valore aggiornata, chiara e coincisa.<br>
+                            Una descrizione logica e completa, ricca di dettagli e spunti di lavoro pratico.
+                          </p>
+                          <br>
+                          <a href="https://www.scienzemotorie.com/libri/manuale-di-preparazione-fisica-del-giovane-tennista/" class="buttonma" target="_blank">READ MORE</a><br>
+                      </div>
+                          <img id="bob" class="slide-image gigi" src="image/manuale.jpeg" alt="Manuale del giovane tennista">
+                      </div>
+                  </div> 
+                    
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide custom-slide">
+                      <h1 class="mango">I miei lavori</h1>
+                      <div class="slide-content">
+                          <!-- Content for Slide 2 -->
+                          <div class="text-content">
+                              <h3 id="ceti" class="manu">Preparazione Fisica <br>specifica per il tennis</h3>
+                          </div>
+                          <img id="bob" class="slide-image gigi" src="image/im2.jpeg" alt="Condizionamento muscolare">
+                      </div>
+                  </div>
+                    <!-- Slide 3 
+                    <div class="swiper-slide custom-slide">
+                      <h1 class="mango">I miei lavori</h1>
+                      <div class="slide-content">
+                        <div class="text-content">
+                          <p class="mant">
+                            Itest fisici  ci permettono di trarre conclusioni<br>
+                            scientifiche perché ci danno un termine di comparazione sulla realtà a<br>
+                            livello locale, nazionale e internazionale.<br>
+                            Questi dati, inoltre, saranno utili<br>
+                            su periodi medio-lunghi per scoprire<br>
+                            status, tendenze e progressi degli atleti.
+                          </p>
+                      </div>
+                          <img id="bob" class="slide-image gigi" src="image/im_salto.jpeg" alt="Condizionamento muscolare">
+                      </div>
+                  </div> -->
+                </div>
+                <!-- Navigation arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        }); 
+    </script>
+      
+          <!-- Blog Section -->
+          <div class="blog-container">
+            <h2 class="patiti">Tieni d'occhio i miei blog</h2>
+            <hr class="blog-divider">
+            <p class="paco">Rimani sempre aggiornato sulle mie pubblicazioni.</p>
+            <h3 class="patiti">I miei social:</h3>
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://instagram.com/andrea___dimauro?igshid=M2RkZGJiMzhjOQ==" target="_blank">
+                    <img class="imso" src="image/instagram-logo.jpeg" alt="Instagram">
+                </a>
+              <a href="https://www.facebook.com/Dimauroandre" target="_blank">
+              <img class="imso" src="image/facebooklogo.jpg" alt="Facebook"></a>
+            </div>
+          </div>
+        </div>
+
+          <!--contact-->
+
+          <section id="contatti" class="body">
+            <section id="contact">
+              
+              <div class="contact-wrapper">
+
+                <h1 class="section-header">Contact</h1>
+
+              <!--form-->
+
+              <!-- Left contact page -->                
+              <form id="contact-form" class="form-horizontal" role="form">
+                         
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nome e cognome" id="name" >
+                  </div>
+                </div>
+          
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Email" id="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control"  placeholder="numero telefonico" id="phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="oggetto " id="oggetto" >
+                  </div>
+                </div>
+                <textarea class="form-control" name="" id="messaggio" cols="31" rows="4" placeholder="Enter your message"> </textarea>     
+                  <button class="btn btn-primary send-button" id="submit" button type="button" onclick="SendEmail()">                  
+                    <div class = "alt-send-button">
+                      <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                    </div>                  
+                  </button>               
+                </form>        
+
+              <!-- Left contact page --> 
+                
+                  <div class="direct-contact-container">
+            
+                    <ul class="contact-list">
+                      
+                      <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">3427567114</a></span></i></li>
+                      
+                      <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="dimauroandrea25@gmail.com" title="Send me an email">dimauroandrea25@gmail.com</a></span></i></li>
+                      
+                    </ul>
+            
+                    <hr>
+                    <ul class="social-media-list">
+                      <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-github" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                      </li>
+                      <li><a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>      
+                    </ul>
+                    <hr>
+            
+                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+            
+                  </div>
+                
+              </div>
+              
+            </section> 
+            </section>
+            <script src="https://smtpjs.com/v3/smtp.js"> </script>
+                  <script>
+                      function SendEmail(){
+                        let name = document.getElementById("name").value;
+                        let email = document.getElementById("email").value;
+                        let conatact = document.getElementById("phone").value;
+                        let subject = document.getElementById("oggetto").value;
+                        let message = document.getElementById("messaggio").value;
+                        let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
+                      Email.send({
+                          SecureToken: "63800db4-d562-4e0a-b01e-a59e506925d1",
+                                          To : 'enrico.zeni05@gmail.com',
+                                          From : "enrico.zeni05@gmail.com",
+                                          Subject : "Message from contact form",
+                                          Body : body
+                       }).then(
+                     message => alert(message)
+                       );
+                  
+                          
+                      }
+                  </script>
+
+</main>
+
+         <!--footer-->
+
+         <section class="piede">
+            <footer class="footer">
+               <div class="container">
+                   <div class="row">
+                       <div class="footer-col">
+                           <h4>Chi sono</h4>
+                           <ul>
+                               <li><a href="https://www.agid.gov.it/it/design-servizi/accessibilita/obiettivi-accessibilita" target="_blank">Obiettivo di accessibilità</a></li>
+                               <li><a href="https://www.agid.gov.it/it/privacy-policy" target="_blank">Informativa privacy</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-col">
+                           <h4>Aiuto</h4>
+                           <ul>
+                               <li><a href="https://www.privacycert.cloud/" target="_blank">Privacy</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-col">
+                           <h4>Contatti</h4>
+                           <ul>
+                               <i class="fa-solid fa-map-location-dot"></i>
+                               <li><a href="dimauroandrea25@gmail.com">dimauroandrea25@gmail.com</a></li>
+                               <li><a href="tel:+393427567114">3427567114</a></li>
+                           </ul>
+                       </div>
+                       <div class="footer-col">
+                           <h4>seguimi su</h4>
+                           <div class="social-links">
+                               <a href="https://www.facebook.com/Dimauroandre" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+                               <a href="https://www.instagram.com/andrea___dimauro/" target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+       </footer>
+     </section>
+   
+  </body>  
 </html>
